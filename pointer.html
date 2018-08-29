@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Saver</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!-- Load TensorFlow.js -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>  
+
+<script src="FileSaver.js"></script>
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#"><h1>SAV<small>ER </small></h1></a>
+  </nav>
+<div class="container-fluid"> 
+
+<blockquote class="blockquote text-justify" style="margin:30px;">
+	<p> First start the video. Then, use the save button to save to drive.</p>
+    <footer class="blockquote-footer">ZAID ALYAFEAI</footer>
+  </blockquote>
+</div>
+
+<div class="container-fluid text-center">
+<video id="video" width = "500" height="500" playsinline style="display:none;">
+        </video>
+	<canvas id="output" width = "500" height="500" ></canvas>
+	<div class="btn-group" style ='margin-left:140px; margin-top:55px; '>
+        <button type="button" class="btn btn-outline-primary" onclick ='loadVideo()'>Start Video</button>
+        <button type="button" class="btn btn-outline-primary" onclick ='saveImage()'>Save Image</button>
+    </div>   
+</div>
+<script type="text/javascript" src = 'getImages.js'>
+</script>
+</body>
+</html>
